@@ -7,54 +7,56 @@
   <title>Sing-up</title>
 </head>
 <body>
-  <!-- Rosie Pritchard -->
+<!-- Rosie Pritchard -->
   
   <div class="image_section">
-
     <div class="logo_container">
       <img src="images/odin-lined.png" alt="logo" style="width:5vw;">
-      <p class="odin">odin</p>
-      
+      <p class="odin">odin</p>      
     </div>
-    <p>Photo by Halie West on Unsplash</p>
+    <p>Photo by <a href="https://unsplash.com/@haliewestphoto">Halie West</a> on <a href="https://unsplash.com/">Unsplash</a></p>
   </div>
 
   <div class="form_section">
-    <p>This is not real online service! You Know you need something like this in your life to help you realize your deepest dreams. Sign up now to get started.</p>
-    <p>You know you want to.</p>
-    <form action="" method="post">
-      <legend>Lets do this!</legend>
+    <p class="text_intro">This is not real online service! You Know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.</p>
+    <p>You <em>know</em> you want to.</p>
+    <form id="form" action="" method="post">
+      <p>Lets do this!</p>
       <div>
-        <label for="user_name">FIRST NAME</label>
-        <input id="user_name" type="text">
-
-        <label for="user_surname">LAST NAME</label>
-        <input id="user_surname" type="text">
+        <div class="name">
+          <label for="user_name">FIRST NAME</label>
+          <input id="user_name" type="text">
+        </div>
+        <div class="surname">
+          <label for="user_surname">LAST NAME</label>
+          <input id="user_surname" type="text">
+        </div>
       </div>
-
       <div>
-        <label for="user_email">EMAIL</label>
-        <input id="user_email" type="email">
-
-        <label for="user_phone">PHONE NUMBER</label>
-        <input id="user_phone" type="tel">
+        <div class="email">
+          <label for="user_email">EMAIL</label>
+          <input id="user_email" type="email">
+        </div>
+        <div class="phone">
+          <label for="user_phone">PHONE NUMBER</label>
+          <input id="user_phone" type="tel">
+        </div>
       </div>
-
       <div>
-        <label for="user_password">PASSWORD</label>
-        <input id="user_password" type="password">
-
-        <label for="user_confirm_password">CONFIRM PASSWORD</label>
-        <input id="user_confirm_password" type="password">
+        <div class="password">
+          <label for="user_password">PASSWORD</label>
+          <input minlength="5" id="user_password" type="password" required>
+        </div>
+        <div class="confirm_password">
+          <label for="user_confirm_password">CONFIRM PASSWORD</label>
+          <input minlength="5" id="user_confirm_password" type="password" required>
+        </div>
       </div>
     </form>
 
-    <button>Create Account</button>
-    <p>Already have an account? Log in</p>
-    
+    <button type="submit" form="form" class="btn_sing">Create Account</button>
+    <p>Already have an account? <a href="">Log in</a></p>
   </div>
-
-  
 
   <script src="script.js"></script>
 </body>
