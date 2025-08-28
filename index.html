@@ -7,8 +7,6 @@
   <title>Sing-up</title>
 </head>
 <body>
-<!-- Rosie Pritchard -->
-  
   <div class="image_section">
     <div class="logo_container">
       <img src="images/odin-lined.png" alt="logo" style="width:5vw;">
@@ -21,37 +19,37 @@
     <p class="text_intro">This is not real online service! You Know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.</p>
     <p>You <em>know</em> you want to.</p>
     <form id="form" action="" method="post">
-      <p>Lets do this!</p>
-      <div>
-        <div class="name">
-          <label for="user_name">FIRST NAME</label>
-          <input id="user_name" type="text">
+        <p>Lets do this!</p>
+        <div>
+          <div class="name">
+            <label for="user_name">FIRST NAME</label>
+            <input id="user_name" type="text" required>
+          </div>
+          <div class="surname">
+            <label for="user_surname">LAST NAME</label>
+            <input id="user_surname" type="text" required>
+          </div>
         </div>
-        <div class="surname">
-          <label for="user_surname">LAST NAME</label>
-          <input id="user_surname" type="text">
+        <div>
+          <div class="email">
+            <label for="user_email">EMAIL</label>
+            <input id="user_email" type="email" required>
+          </div>
+          <div class="phone">
+            <label for="user_phone">PHONE NUMBER</label>
+            <input id="user_phone" type="tel" required>
+          </div>
         </div>
-      </div>
-      <div>
-        <div class="email">
-          <label for="user_email">EMAIL</label>
-          <input id="user_email" type="email">
+        <div>
+          <div class="password">
+            <label for="user_password">PASSWORD</label>
+            <input minlength="5" id="user_password" type="password" required>
+          </div>
+          <div class="confirm_password">
+            <label for="user_confirm_password">CONFIRM PASSWORD</label>
+            <input minlength="5" id="user_confirm_password" type="password" required>
+          </div>
         </div>
-        <div class="phone">
-          <label for="user_phone">PHONE NUMBER</label>
-          <input id="user_phone" type="tel">
-        </div>
-      </div>
-      <div>
-        <div class="password">
-          <label for="user_password">PASSWORD</label>
-          <input minlength="5" id="user_password" type="password" required>
-        </div>
-        <div class="confirm_password">
-          <label for="user_confirm_password">CONFIRM PASSWORD</label>
-          <input minlength="5" id="user_confirm_password" type="password" required>
-        </div>
-      </div>
     </form>
 
     <button type="submit" form="form" class="btn_sing">Create Account</button>
